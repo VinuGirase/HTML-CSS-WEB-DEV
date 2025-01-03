@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p36.css" >
+    <title> p36 css first child and first type </title>
+</head>
+<body>
+
+    <!-- first child only those p tag will be colored which are direct child of any tag  
+    and occurs first before other tags also-->
+    <!-- but first of type will be applied to all p tag which are first child irrespective of thier occrance
+    but it should be first among other p tags -->
+
+    <!-- direct opposite of it will be for last child and last type -->
+    <header>
+        
+        <p> first paragraph</p>  <!-- direct 1st child of header -->
+        <p> second paragraph</p>
+        <p> third paragraph</p>
+    </header>
+
+    <header>
+        <h1> 2nd child of body i am header</h1>
+        <p> first paragraph</p> <!-- direct child of header but not 1st child -->
+        <p> second paragraph</p>
+        <p> third paragraph</p>
+    </header>
+
+    <p> 3rd child of body </p> <!-- not 1st child  -->
+    <p> 4th child of body</p> <!-- not 1st child  -->
+
+    <div class="container">
+        <p> first child of div tag</p> <!-- 1st child -->
+        <p> 2nd child of div tag </p>
+        <p> 3rd child of div tag</p>
+    </div>
+
+</body>
+</html>

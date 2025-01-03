@@ -1,0 +1,20 @@
+h1{
+    /* space between in letters */
+    letter-spacing:4px;
+
+    /* text decoration */
+    text-decoration: underline wavy red;
+    /* text-decoration: overline solid red;  */
+
+}
+
+p{
+    /* it give vertical space between lines */
+    line-height: 20px;
+
+    /* it gives space between words */
+    word-spacing: 10px;
+
+    
+
+}

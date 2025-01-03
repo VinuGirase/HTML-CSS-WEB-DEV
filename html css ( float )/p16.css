@@ -1,0 +1,19 @@
+/* body{
+    is arial is not avialable then it will use helvetica if it not then sans-serif
+    font-family: Arial, Helvetica,sans-serif;
+} */
+
+.arial
+{
+    font-family: Arial;
+}
+
+.helvetica
+{
+    font-family: Helvetica;
+}
+
+.sans-serif
+{
+    font-family: sans-serif;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P10 form</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+
+    <!-- action redirect data to that file -->
+    <!-- method are of 2 types get and post -->
+    <form action="p10_form_action.html" method="POST">
+        <!-- here for is to denote that for whom this label is  -->
+        <!-- in for we have to give id of that element -->
+        <!-- eg. we have given username which id of input below it -->
+        <label for="username" > Username : </label>
+        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+        <!-- placeholder are used to display on input bar  -->
+        <!-- required is used to represent that this tag needs input compulsorly -->
+        <br><br>
+
+        <label for="password" > Password : </label>
+        <!-- input:password and press enter -->
+        <input type="password"  id="password" name="password">
+        <br><br>
+
+        <label for="email" > Email : </label>
+        <input type="email"  id="email" name="email">
+
+        <br><br>
+
+        <p>Select your Gender</p>
+        <label for="male" > Male : </label>
+        <input type="radio" name="gender" value="male" id="male">
+        <br>
+        <label for="female" > Female : </label>
+        <input type="radio" name="gender" value="female" id="female">
+        
+
+        <br><br>
+
+        <label for="age" > Age : </label>
+        <select id="age">
+            <option value="10 - 20">10 - 20</option>
+            <option value="21 - 30">21 - 30</option>
+            <option value="31 - 40">31 - 40</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- this is input with submit type look like button -->
+        <input type="submit" value="sign in">
+
+        <!-- this is button with submit type  -->
+        <button type="submit" > button </button>
+    </form>
+</body>
+</html>

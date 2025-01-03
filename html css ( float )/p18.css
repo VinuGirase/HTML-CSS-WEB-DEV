@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.heading {
+    color:green;
+}
+
+.bg-color{
+    background: grey;
+}
+
+span{
+    background: aqua;
+}

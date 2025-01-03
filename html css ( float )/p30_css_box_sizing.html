@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p30.css">
+    <title> p30 Box sizing </title>
+</head>
+<body>
+    <!-- this draw line  -->
+    <!-- we are using this line for reference purpose
+    we have give width : 500px -->
+    <hr>
+
+    <!-- this box has css
+        .box1
+        {
+            width: 500px;
+            background: rgb(255, 207, 207);
+        }    
+        so it has same width that of above line
+    -->
+    <div class="box1">
+        <h2> BOX 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore maiores dolore laboriosam quo repellendus cum voluptates sunt dicta, debitis adipisci mollitia odio velit deleniti illum id quae. At minus molestiae est ducimus nemo. Exercitationem debitis sit molestias, minima ea necessitatibus placeat iure sunt ratione tenetur atque, officiis quibusdam similique eum in deleniti omnis. Esse asperiores neque rerum! Accusantium doloribus voluptas tenetur exercitationem modi? Unde repellendus, eaque, animi voluptatem obcaecati cupiditate laboriosam ea rem nemo inventore cumque nulla itaque quae accusantium, ex vero amet aut. Earum vero commodi tempora quo quae deleniti ipsum aut natus, neque praesentium provident, excepturi ab et.</p>
+    </div>
+
+    <!-- 
+        .box2
+        {
+            width: 500px;
+            background: rgb(255, 207, 207);
+            border: 10px solid red;
+            padding: 50px;
+        }
+
+        now it will have width 500px + both side padding and border
+        ie 500 + 20 + 100 = 620px total width
+     -->
+    <div class="box2">
+        <h2> BOX 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore maiores dolore laboriosam quo repellendus cum voluptates sunt dicta, debitis adipisci mollitia odio velit deleniti illum id quae. At minus molestiae est ducimus nemo. Exercitationem debitis sit molestias, minima ea necessitatibus placeat iure sunt ratione tenetur atque, officiis quibusdam similique eum in deleniti omnis. Esse asperiores neque rerum! Accusantium doloribus voluptas tenetur exercitationem modi? Unde repellendus, eaque, animi voluptatem obcaecati cupiditate laboriosam ea rem nemo inventore cumque nulla itaque quae accusantium, ex vero amet aut. Earum vero commodi tempora quo quae deleniti ipsum aut natus, neque praesentium provident, excepturi ab et.</p>
+    </div>
+
+    <!-- but if we want that our width should 500px only 
+        even if we add padding or border to it -->
+    <!-- 
+        .box3
+        {
+            box-sizing: border-box;   <-----
+            width: 500px;
+            background: rgb(255, 207, 207);
+            border: 10px solid red;
+            padding: 50px;
+            margin:10px 0;
+
+        }
+        now it will keep width 500px 
+        no compromise in border and padding it will remain same
+        but overall width will be now 500px
+        and height and width of text will be auto adjust
+
+        --
+        by default we have 
+        box-sizing: content-box;
+        in which content size is 500px 
+    
+     -->
+    <div class="box3">
+        <h2> BOX 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore maiores dolore laboriosam quo repellendus cum voluptates sunt dicta, debitis adipisci mollitia odio velit deleniti illum id quae. At minus molestiae est ducimus nemo. Exercitationem debitis sit molestias, minima ea necessitatibus placeat iure sunt ratione tenetur atque, officiis quibusdam similique eum in deleniti omnis. Esse asperiores neque rerum! Accusantium doloribus voluptas tenetur exercitationem modi? Unde repellendus, eaque, animi voluptatem obcaecati cupiditate laboriosam ea rem nemo inventore cumque nulla itaque quae accusantium, ex vero amet aut. Earum vero commodi tempora quo quae deleniti ipsum aut natus, neque praesentium provident, excepturi ab et.</p>
+    </div>
+
+</body>
+</html>

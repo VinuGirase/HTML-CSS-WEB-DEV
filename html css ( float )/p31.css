@@ -1,0 +1,7 @@
+/* by default browser add some margin padding and some other styles */
+/* so we use universal selector and make everything 0 */
+*
+{
+    margin : 0;
+    padding: 0;
+}

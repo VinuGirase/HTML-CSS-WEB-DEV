@@ -1,0 +1,35 @@
+h1{
+    border:brown dashed 20px; 
+    /* to add space between border and content is called padding */
+    padding-left:50px;
+    padding-top:60px;
+    padding-bottom:20px;
+    /* right not visible bcz h1 take whole width so if i give padding from right
+     and also from left then it will start shrinking the width  */
+    /* element is always stick to left side of border  */
+    padding-right:20px;
+
+    /* padding: top  right bottom left; clockwise */
+    /* padding: _ for all side equal padding */
+
+
+    /* ------------ */
+    /* to add space outside border  */
+    /* bowser has default margin also for top and bottom  */
+    /* margin: 100px; */
+    /* as margin increase border start shrinking to make that space */
+
+    /* ------------- */
+    /* to change width */
+    /* as it takes whole witdh so we have to give it as per our need */
+    width : 500px;
+    margin: 20px auto;
+    /* top and bottom - 20px and left right auto     */
+    /* it makes  it in center same margin from left and right  */
+
+
+    /* bg color also start from where border starts */
+    background-color: red;
+}
+
+

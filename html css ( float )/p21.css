@@ -1,0 +1,40 @@
+h1{
+    color:green;
+}
+
+.h1class1{
+    color:red;
+}
+/* the class which come later has more specifity/ priority */
+/* .h1class2 >> .h1class2  bcz .h1class2 is written later*/
+.h1class2{
+    color:blue;
+}
+/* but to increase priority of firstly return class */
+/* h1.h1class1 */
+/* now it will show red */
+/* h1.h1class1 >> .h1class2 even we h1.h1class1 is written first */
+
+
+
+/* h1 will have red color bcz classes are more specific then tag css */
+/* class selector > element selector
+    thats why it will have red over green */
+
+
+/* ---------------- */
+
+/* !important means that it will have most priority */
+/* #h1{
+    color:blue !important;
+} */
+
+/* but id selector is more specific then class selectors */
+/* 
+    id selector >> class selectors
+    thats why it will have red over blue
+*/
+
+/* inline >> internal >> external */
+
+/* inline style >> id selector */

@@ -1,0 +1,46 @@
+/* link visited hover active */
+
+a:link{
+    color:rgb(232, 158, 21);
+}
+
+a:visited
+{
+    color:rgb(136, 0, 255);
+}
+
+a:hover
+{
+    color:rgb(12, 255, 206);
+}
+
+
+
+
+p:hover{
+    color:aquamarine;
+}
+a:active{
+    color:green;
+}
+
+p:active{
+    /* when ever i click on paragraph  */
+    background:rgb(223, 189, 255);
+    color:blueviolet;
+}
+
+
+input:required{
+    /* compulsory */
+    color:green:
+}
+
+input:focus{
+    /* when we are entering input */
+    padding:5px;
+    color: red;
+    /* outline:none; */
+}
+
+

@@ -1,0 +1,32 @@
+/* selector :  inline >> id >> class >> element  */
+
+div#container ul.my-songs li
+{
+    color:brown;
+    background-color: yellow;
+}
+
+/* how to calculate specificity  */
+/* _,_,_,_  make like this ane if above selector is present then give 1 otherwise 0*/
+/* 0,1,1,3 */
+/* 113 is specificity of above code  */
+
+.favorite
+{
+    color: yellow;
+    background-color: brown;
+}
+
+/* 0,0,1,0 --- > 10 */
+
+/* 113 >> 10 */
+
+
+/* to make it more specific */
+div#container ul.my-songs li.favorite
+{
+    color:yellow;
+    background-color: brown;
+}
+
+/* 0,1,2,3 --->123 */

@@ -1,0 +1,47 @@
+
+
+/* if we want that when we type in input to give color to that  */
+/* [type = "text"] means that input tag having type as text */
+input[type = "text"]
+{
+    color:red;
+    background-color: rgb(228, 255, 255);
+}
+
+input[type="password"]
+{
+    background-color: rgb(255, 223, 228);
+    color:red;
+}
+
+
+/* if i have to give color to only google india a tag */
+/* this is for individual */
+a[href="https://google.co.in"]
+{
+    color:red;
+}
+
+/* if i have to change color of those a that which are having google in their link */
+/* ie in link having google as substring */
+/* https://google.co.in here google is present */
+
+a[href *= "google"]
+{
+    color:red;
+}
+
+/* if i want to select those which are starting with www */
+a[href ^= "www"]
+{
+    color:blue;
+}
+
+/* select those end with .com */
+a[href $=".com"]
+{
+    color:blueviolet;
+}
+
+
+/* we can do this with all attribute */

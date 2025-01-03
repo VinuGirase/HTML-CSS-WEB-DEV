@@ -1,0 +1,41 @@
+/* :not(tag, class, id) */
+/* 
+:not(p)
+{
+     expectation :it will color all other element other then p 
+    but no it will also have blue color bcz it is inheriting blue color from body
+
+    color:blue;
+} */
+
+/* to over come this 
+we use body:not it represent expect p tag all other in body should be blue */
+/* body :not()
+{
+    space is mandatory
+    color:blue;
+}
+
+body :not(.fancy)
+{
+    space is mandatory
+    background:#ddd;
+} */
+
+
+div:empty{
+    background: #ddd;
+    border: 2px solid red;
+    width:100px;
+    height:100px;
+}
+
+:root{
+    background-color: aqua;
+    color:black;
+}
+
+/* root is more specific then html {} */
+
+/* but we do not use this 
+instead we use body */

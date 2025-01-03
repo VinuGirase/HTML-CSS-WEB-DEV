@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    border: 1px solid black;
+    /* we change its width to 500 px */
+    width:500px;
+    /* it will now show in center having width 500px */
+}
+
+a{
+    background: rgb(255, 179, 179);
+    /* nothing will happen bcz its available width
+    is only for itself 
+    so we cannot do directly
+    to do so we have to change its display to block */
+    text-align: center;
+    display:block;
+}

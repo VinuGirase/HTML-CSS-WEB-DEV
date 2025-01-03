@@ -1,0 +1,90 @@
+/* it is universal selector */
+/* it is applied to all html tags */
+/* *{
+    color:blue;
+} */
+
+
+header{
+    background-color: #f0ebeb;
+}
+
+
+/* this represtion only those section tags whose class is my-aticles  */
+section.my-articles
+{
+    background-color: #f0a9a9;
+}
+
+
+
+/* this will choose only those p tag which are inside header tag */
+header p{
+    color: blue;
+}
+
+
+/* this will choose those a tag which are inside li tag */
+li a {
+    color: violet;
+}
+
+/* this will color all the h2 tag inside section having class my-articles */
+/* section.my-articles h2{
+    color:green;
+} */
+/* but we dont want like that */
+/* section
+    h2   <- 
+    article
+        h2
+        article
+        h2 */
+/* this is heirarchy but i want to only color direct child/decentent i have mark is with ( <- ) */
+/* to do this  */
+
+section.my-articles > h2{
+    color: green;
+}
+
+/* --------------------------------- */
+/* adjancent selector */
+/* now i have to change color of  paragraph tag which comes after h2 tag */
+/* hierarchy is  */
+/*
+    section class= my-articles
+    h2
+        article
+            h2
+            p
+        article
+            p
+            h2
+            p  <-
+            p
+            p
+ */
+
+/* to color only those p tags which comes after h2 */
+/* note : it only change color of p tag which is immideate after h2 tag ( denoted with <- ) */
+h2+p{
+    color:rgb(18, 133, 133);
+}
+/* similarly we can change for others also */
+/* for example take p tag after ul */
+/* hierarchy */
+/* 
+    header
+        p
+        h1
+        ul
+            li
+            li
+            li
+        p    <-
+*/
+ul+p{
+    color: rgb(164, 107, 1);
+}
+/* for changing h2+p only for those h2 which are inside section which is having class my- articles   */
+/* section.my-articles h2+p */

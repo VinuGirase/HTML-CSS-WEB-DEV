@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P13 CLASS ID attribute</title>
+    <style>
+        /* but this will give red color to all h2 tags  */
+        h2{
+            color:red; 
+        }
+        /* to give it to single we using that tags id or class */
+        .classh2{
+            color:rgb(0, 34, 255);
+        }
+        #idh2{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 class=""> Class and ID </h1>
+    <!-- with id and class we cannot work with css -->
+    <h2 class="classh2"> h2 1 </h2>
+    <h2 id="idh2"> h2 2 </h2>
+    <h2 class=""> h2 3 </h2>
+    <h2 class=""> h2 4 </h2>
+
+    <!-- class are used for styling purpose  -->
+    <!-- tags can have multiple classes  -->
+    <!-- id is used for select of any tag to manipulate in js and also used for styling -->
+    <!-- tag cannot have multiple id for single tag -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* always use :: to select pseudo element */
+
+p::first-letter
+{
+    /* it will change font size of  first letter of line */
+    font-size:32px;
+}
+
+::selection{
+    /* when we are selecting text */
+    background: black;
+    color:white;
+}
+
+
+/* this add some content before this element */
+
+/* we cannot select this content or copy content  */
+.p::before{
+    content:"hello";
+    color:green;
+    border: 2px solid black;
+    padding : 5px;
+    /* by default it is inline  */
+    display: block;
+}
+
+/* same after will add after that  */
+
+/*  we cannot use before after pseudo elements with
+img br input video */

@@ -1,0 +1,41 @@
+p:first-child{
+    /* only those p tag will be colored which are direct child of any tag  */
+    color: red;
+}
+
+/* p:first-of-type
+{
+
+    it will make green to every p which is first child
+    
+    color:green;
+} */
+
+
+/* ---------------- */
+/* and if i want coustomized child */
+
+
+/* 
+p:nth-child(2)
+{
+    this is for 2nd child
+}
+
+and if we want in multiple of any 
+
+p:nth-child(2n)
+{
+    we can put equation type also 2n+1 or n*n
+    this if for multiple of 2 
+    ie 2 4 6 8...
+}
+*/
+
+/* 
+p:nth-of-type(2)
+
+
+working is same as normal first-of-child
+and works similar to above one
+*/

@@ -1,0 +1,33 @@
+hr{
+    width: 500px;
+    margin-left: 0;
+    border: 1px dashed black;
+}
+
+.box1
+{
+    width: 500px;
+    background: rgb(255, 207, 207);
+    margin:10px 0;
+}
+
+.box2
+{
+    width: 500px;
+    background: rgb(255, 207, 207);
+    border: 10px solid red;
+    padding: 50px;
+    margin:10px 0;
+
+}
+
+.box3
+{
+    box-sizing: border-box;
+    width: 500px;
+    background: rgb(255, 207, 207);
+    border: 10px solid red;
+    padding: 50px;
+    margin:10px 0;
+
+}

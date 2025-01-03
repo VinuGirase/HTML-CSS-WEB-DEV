@@ -1,0 +1,76 @@
+p{
+
+    /* absolute */
+    /* default size - 16px */
+    /* font-size:2in; */
+
+    /* 1 inch = 96 px */
+    /* 1 in = 2.54 cm */
+    /* 1 px = 0.75 pt */
+    /*  */
+}
+
+div{
+    border: 2px solid black;
+    width:50%
+}
+
+
+p{
+    /* relative  */
+    /* by default it has 16px so 100% will be 16px */
+    /* this 100% will be calculated on its parent size  */
+    font-size:100%;
+    border: 2px solid red;
+
+
+    /* 50% width of parent** */
+    width : 50%;
+
+    /* now if we have use 50% and now we are saying that on left 
+    it should take 25% so it will now give 25% to left and remaining to right */
+    margin-left: 25%;
+    text-align:center;
+
+}
+
+
+/* to give default font size to html page 
+
+html
+{
+    font-size: 10px;
+    this is done becuase calculation become is easy
+    when using 10px 
+
+    but developer does not directly use 10px
+    istead they use 62.5% 
+    62.5% of 16px = 10px
+
+    but other reason of using it in % is that
+    they have change thier browsers font size so
+    so if viewer have increase browser font so they should get proper font as
+    per their font
+    
+
+
+}
+
+
+*/
+
+
+/* rem */
+
+.box1
+{
+    /* it make it multiple of its browsers font size 
+    for ex default size is 16px them 2rem means 32px */
+    font-size: 2rem;
+
+}
+
+
+/* em */
+/* for text : it will be multiple of its parents font */
+/* for padding : calculated on font-size */
