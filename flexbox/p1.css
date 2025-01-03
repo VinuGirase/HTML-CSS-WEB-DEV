@@ -1,0 +1,114 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper
+{
+    border: 10px solid #222;
+    /* when we set it as display : flex the div.box-wrapper becomes FLEX CONTAINER
+    and its item ie box box-1 box-2 ... box-5 becomes FLEX ITEMS   */
+    /* with help of this all flex items are set from left to right 
+    auto width is adjust ( NOTE : take that width only which required like inline ) */
+    
+    
+    /* SOME VERY IMP Terminology we should Kown about : 
+        1. main axis : 
+            starts from left and end to right
+            start position is called as main start 
+            end position is called as main end
+        2. cross axis :
+            Cross Axis is always Perpendicular to main axis
+            starts from top to bottom
+            start position is called as cross start 
+            end position is called as cross end
+
+        3. main size and cross sixe
+            - main start to main end => main size
+            - cross start to cross end => cross size
+        
+
+    */
+
+    /* 
+        PROPERTIES of Flex Container
+
+        1. flex-direction :
+            by default flex direction is row
+
+            i. flex-direction : row;
+                -  here main axis is from left to right
+            
+            ii. flex-direction : row-reverse;
+                - here main axis is from right to left (ie box-5 box-4...box-1)
+            
+            iii. flex-direction : column;
+                - here main axis is from top to bottom (ie box-1 box-2...box-5 but top to bottom)
+                - it takes whole width
+            iv. flex-direction : column-reverse;
+                - here main axis is from bottom to top (ie box-5 box-4 ... box-1 top to bottom)
+                - it takes whole width
+            
+        2. flex-wrap
+            it done when we have to give width by our choice 
+            so we have given width to .box ie 500px
+            and here we have used flex-wrap:wrap;   
+            
+            
+            by default it is nowrap
+
+            i. flex-wrap : wrap;
+                - it will now take 500px width and if other are not able to fit in that means 200px width remaining so 500px will not fit
+                so it goes down means starts below main axis ( in cross axis )
+                for example
+                box 1 | box 2 | box 3
+                box 4 | box 5 | 
+                like this
+            
+            ii. flex-wrap : wrap-reverse;
+                - same thing but here instead of going from top to bottom
+                it will go bottom to top
+
+                box 4 | box 5 | 
+                box 1 | box 2 | box 3
+
+                like this
+
+        3. refer p2_flexbox_2 for justify-content
+
+
+    * / */
+
+    display: flex;
+
+    /* it done when we have to give width by our choice 
+    so we have given width to .box ie 500px
+    and here we have used flex-wrap:wrap;  */
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 1px solid #666;
+    width: 500px;
+    /* it will take height */
+    height: 300px;
+}
+
+.box-1{
+    background:  lightblue;
+}
+
+.box-2{
+    background: lightcoral ;
+}
+
+.box-3{
+    background: lightgray ;
+}
+
+.box-4{
+    background:  lightsalmon;
+}
+
+.box-5{
+    background:  lightslategrey;
+}

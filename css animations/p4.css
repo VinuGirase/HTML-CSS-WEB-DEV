@@ -1,0 +1,97 @@
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background: lightgreen;
+    margin: 100px auto;
+    /* 
+        Transformation we can apply
+        1. rotate
+        2. skew
+        3. translate
+        4. scale
+    */
+
+
+    
+    /* this transition will occur when we hover any object */
+    transition : transform 3s ease-in-out;   
+    transform-origin: top ;
+    /*
+        values for transform-origin
+        these values are with respect with its width 
+        in pixel
+        in %
+        
+        in value like key words
+        top
+        bottom
+        left 
+        right
+        top right
+        top left
+        so on...
+     */
+
+
+
+
+    /* --------------- */
+    /* translate */
+    /* transform: translateX(200px); */
+
+    /* transform: translateX(50%); 50% of its width */
+    
+    /* to give x and y  */
+    /* transform: translate( X, Y); */
+
+
+    
+
+}
+
+
+.box:hover{
+
+    /* ----------------- */
+    /* rotate
+        by default - it rotate from center 
+
+        we can change this using transform-origin
+    */
+
+
+
+    /*  to rotate it by 90 degrees  */
+    transform: rotate(90deg);
+    /* anticlock wise transform: rotate(-90deg); */
+
+    /* ------------------------- */
+    /* scale */
+
+    /* scaleX - make it time by X axis */
+    /* transform: scaleX(2); */
+
+    /* scaleY - make it 2 time by Y axis */
+    /* transform: scaleY(2); */
+
+    /* scale - it will increase it 2 time in both axis */
+    
+    /* case 1 : symmetric */
+    /* transform: scale(2); */
+
+    /* case 2 : Asymmetric */
+    /* transform: scale(2,3); */
+
+    /* ------------------------------ */
+
+    /* translate */
+    /* used to move from one position to another  */
+
+    /* it is not given in hover  */
+
+
+    /* ------------------------------ */
+    /* transform: skewX(50deg); */
+    /* skewY , skew( X, Y) */
+}

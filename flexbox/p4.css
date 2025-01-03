@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper
+{
+    border: 10px solid #222;
+    display: flex;
+    height: 700px;
+    flex-wrap: wrap;
+    /* auto ajust height (optimum height ) and stick to cross start  */
+    align-items: flex-start;
+
+    
+    
+    /*  align content works with cross axis */
+
+    
+    /* flex start -  stick to cross start*/
+    /* align-content: flex-start; */
+
+    /* flex-end - stick to cross end  */
+    /* align-content: flex-end; */
+
+
+    
+    /* center - all the content is now lie in center */
+    /* align-content: center; */
+
+    /* space-between - add space between elements  */
+    /* align-content: space-between; */
+
+    /* space around - add equal space around each  items */
+    /* align-content: space-around; */
+
+    /* space-evenly - add equal space around all elements ( it is not around each element ) */
+    /* align-content: space-evenly; */
+    
+
+
+}
+
+.box{
+    border: 1px solid #666;
+    padding:10px;
+    width:500px;
+}
+
+.box-1{
+    background:  lightblue;
+}
+
+.box-2{
+    background: lightcoral ;
+}
+
+.box-3{
+    background: lightgray ;
+}
+
+.box-4{
+    background:  lightsalmon;
+}
+
+.box-5{
+    background:  lightslategrey;
+}

@@ -1,0 +1,64 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper
+{
+    border: 10px solid #222;
+    display: flex;
+    width:1200px
+    
+    
+}
+
+.box{
+    flex-basis: 300px;
+
+    /* it used when flex item have took thier width and some space it remaing of flex box
+    how to manage or occupy space by flex items flex grow is used*/
+
+    /* by default flex-grow : 0 */
+
+    /* flex-grow : 1 - all items will take equal width and occupy all the space */
+    /* flex-grow: 1; */
+}
+
+.box-1{
+    background:  lightblue;
+
+    /* now our width of flex box was 1200px
+    and each flex item have width of 300px
+    their are 3 items and 300px space it remaining
+    box-1 flex-grow:1
+    box-2 flex-grow:2
+    box-3 flex-grow:3
+
+    total flex-grow is 6 so divide 300 by 6 = 50
+    give them as per
+    50
+    100
+    150
+    respectively
+     */
+    flex-grow:1;
+}
+
+.box-2{
+    background: lightcoral ;
+    flex-grow:2;
+
+}
+
+.box-3{
+    background: lightgray ;
+    flex-grow:3;
+
+}
+
+.box-4{
+    background:  lightsalmon;
+}
+
+.box-5{
+    background:  lightslategrey;
+}

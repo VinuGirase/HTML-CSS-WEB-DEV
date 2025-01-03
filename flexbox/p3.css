@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-wrapper
+{
+    border: 10px solid #222;
+    height:700px;
+    display: flex;
+
+    /* 
+        IMP NOTE :
+        justify-content is for main axis
+        align-items is for cross axis
+    */
+
+    /* by default align-items : stretch  
+         Items are stretched to fill the container.
+    */
+    /* align-items: stretch; */
+
+    /* flex-start - it will stick to cross start  */
+    /* align-items: flex-start; */
+
+    /* flex-end - it will stick to cross end */
+    /* align-items: flex-end; */
+
+    /* center - it will lie in center of cross axis */
+    /* equal space top and bottom */
+    /* align-items: center; */
+
+     
+}
+
+.box{
+    border: 1px solid #666;
+    padding:10px;
+}
+
+.box-1{
+    background:  lightblue;
+}
+
+.box-2{
+    background: lightcoral ;
+}
+
+.box-3{
+    background: lightgray ;
+}
+
+.box-4{
+    background:  lightsalmon;
+}
+
+.box-5{
+    background:  lightslategrey;
+}

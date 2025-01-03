@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style:none;
+}
+
+.hamburger-menu{
+    position: relative;
+}
+.hamburger-menu input[type="checkbox"]{
+    display: block;
+    position: absolute;
+    top: 12px;
+    left:5px;
+    
+    width:40px;
+    height: 32px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.hamburger-lines
+{
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top:15px;
+    left:7px;
+    z-index: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-lines .line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #232323;
+    border-radius: 10px;
+}
+
+
+/* from .hamburger-menu select input having type checkbox : when it is checked  */
+/* ~ is used for when we have to select sibling means having same parent or at same level */
+.hamburger-menu input[type="checkbox"]:checked ~ .menu-items{
+    /* initially we have set .menu-items display : none
+    so when ever checkbox is checked then its display turn into block */
+    /* display: block; */
+    transform: translateX(0%);
+    background: #232323;
+    color:#fff;
+}
+
+.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .line{
+    background: #fff;
+}
+
+.menu-items li{
+    margin-bottom: 2rem;
+    font-size: 1.5rem
+}
+.menu-items{
+    padding-top: 100px;
+    transform: translate(-110%);
+    transition: transform 0.2s ease-in-out;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    background: #232323;
+
+    margin-top: -15px;
+    margin-left: -15px;
+
+}
+

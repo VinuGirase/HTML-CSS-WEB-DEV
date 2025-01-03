@@ -1,0 +1,25 @@
+.box{
+    width:100px;
+    height : 100px;
+    background: lightpink;
+
+    /* on which property of that .box we want to add transition */
+    transition-property : background, width, height;
+    transition-duration: 1s;
+    /* we can write this in  single line 
+        transition : background 1s ease-in-out;
+
+        and if we want to run all properties 
+        transition : all 1s ease-in-out;
+    */
+
+
+    /* slow start and end */
+    transition-timing-function: ease-in-out;
+}
+
+.box:hover{
+    background: lightblue;
+    width:200px;
+    height: 200px;
+}

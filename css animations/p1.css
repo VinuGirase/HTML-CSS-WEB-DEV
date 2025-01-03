@@ -1,0 +1,70 @@
+.box
+{
+    width: 100px;
+    height: 100px;
+    background: red;
+
+
+    /* animation */
+
+    animation-name: change-bg-color;
+
+    /* take animation should take  */
+    animation-duration: 10s;
+
+    /* when page is either opened or reload 
+    after how much delay should this animation should work */
+    animation-delay: 2s;
+
+    /* how many times should this animation should run */
+    /* animation-iteration-count: 3; */
+
+
+    /* when animaion get complete it return to its original style 
+    but if we dont want that to happen */
+    animation-fill-mode: forwards;
+}
+
+
+/* it is for change-bg-color animation
+    it has to things to give 
+    1. from what style 
+    2. to what  style
+    should that animation work
+*/
+@keyframes change-bg-color {
+    from{
+        background: rgb(255, 166, 0);
+    }
+    to{
+        background: yellow;
+
+    }
+   
+    
+}
+
+
+.box2
+{
+    width:15px;
+    height: 10px;
+    background: blue;
+    animation-name: grow-width;
+    animation-duration: 10s;
+    animation-delay:2s;
+    animation-fill-mode: forwards;
+
+    /* animation will reversed */
+    /* animation-direction: reverse; */
+}
+
+@keyframes grow-width {
+    from{
+
+    }
+    to{
+        width:500px;
+    }
+     
+}
